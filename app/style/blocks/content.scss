@@ -6,6 +6,11 @@
   @include laptop {
     display: block;
   }
+
+  @include tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .content__items-wrapper {
@@ -20,6 +25,19 @@
     width: 100%;
     margin-bottom: 10px;
   }
+
+  @include tablet {
+    display: block;
+    margin: 0;
+    
+    &:last-child {
+      .item:last-child {
+        .content__item {
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 .item {
@@ -29,10 +47,17 @@
   width: 50%;
   height: 100%;
 
+
   @include laptop {
     display: table-cell;
     float: none;
     width: 50%;
+  }
+
+  @include tablet {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -42,7 +67,11 @@
   padding: 10px;
   height: 100%;
 
-
+  @include tablet {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $green;
+  }
 }
 
 .content__title {
@@ -59,9 +88,44 @@
   height: 130px;
   background: url(../img/content/sprites.png) no-repeat;
   margin: auto;
+  max-width: 100%;
 }
 
 .content__picture_screen-1 {
   background-position: 0 -1px ;
   width: 210px;
+
+  //@include laptop {
+  //  width: 100%;
+  //}
+}
+
+.content__picture_record{
+  background-position: -250px 0;
+  width: 172px;
+  //@include laptop {
+  //  width: 100%;
+  //}
+}
+
+.content__picture_video{
+  background-position: 0 -150px ;
+  width: 184px;
+  //@include laptop {
+  //  width: 100%;
+  //}
+}
+
+.content__picture_screen-2{
+  background-position: -250px -150px ;
+  width: 138px;
+  //@include laptop {
+  //  width: 100%;
+  //}
+}
+
+.content__picture {
+  @include desctop {
+    max-width: 100%;
+  }
 }

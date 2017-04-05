@@ -61,5 +61,9 @@ a {
   @include laptop {
     width: 580px;
   }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
