@@ -51,15 +51,15 @@ a {
 }
 
 .container {
-  width: 1000px;
+  width: 980px;
   margin: auto;
 
   @include desctop{
-    width: 800px;
+    width: 780px;
   }
 
   @include laptop {
-    width: 600px;
+    width: 580px;
   }
 }
 
