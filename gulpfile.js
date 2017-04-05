@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean');
 var spritesmith = require("gulp-spritesmith");
 var gulpif = require('gulp-if');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', function buildHTML() {
     return gulp.src('app/*.pug')
@@ -18,6 +19,10 @@ gulp.task('pug', function buildHTML() {
 gulp.task('sass', function () {
     return gulp.src('./app/style/style.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('dist/css'));
 });
 
