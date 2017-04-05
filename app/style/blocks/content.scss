@@ -1,31 +1,35 @@
 .content {
-  .container{
-    @include clearfix();
-    padding: 20px;
-    display: flex;
-    align-items: stretch;
-  }
+  display: table;
+  padding: 20px;
+  width: 100%;
 }
+
+.content__item-wrapper {
+  display: table-cell;
+  @include clearfix();
+  height: 100%;
+  width: 50%;
+}
+
 .content__item {
-  float: left;
-  width: calc(100%/4 - 20px);
-  margin: 0 10px;
   border: 1px solid $green;
   border-radius: 6px;
   padding: 10px;
-
-  &:last-child {
-    margin-left: 0;
-  }
+  height: 100%;
+  float: left;
+  width: calc(100%/2 - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .content__title {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 0 0px 5px;
   color:  #212121;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
+  height: 36px;
+  overflow: hidden;
 }
 
 .content__picture {

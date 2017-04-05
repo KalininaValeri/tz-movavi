@@ -53,5 +53,13 @@ a {
 .container {
   width: 1000px;
   margin: auto;
+
+  @include desctop{
+    width: 800px;
+  }
+
+  @include laptop {
+    width: 600px;
+  }
 }
 
