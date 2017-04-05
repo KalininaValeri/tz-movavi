@@ -5,6 +5,18 @@
   .container {
     padding: 235px 0px 20px;
     background: url('../img/header/bg.png') no-repeat 50% top;
+
+
+    @include laptop {
+      padding-top: 210px;
+      background-size: contain;
+    }
+
+    @include tablet {
+      padding-top: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -16,7 +28,10 @@
   text-align: center;
   width: 515px;
   margin: 0 auto 10px;
-  //line-height: 1.2;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .header__button {
@@ -42,6 +57,13 @@
   }
 
 
+}
+
+@media screen and (min-width:0\0) {
+  /* IE9 and IE10 rule sets go here */
+  .header__button {
+    box-shadow: 2px 2px 15px #3a312a;
+  }
 }
 
 .header__text_old-price {
