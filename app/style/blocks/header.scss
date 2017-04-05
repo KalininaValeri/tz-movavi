@@ -38,7 +38,6 @@
   display: inline-block;
   padding: 15px 30px;
   border-radius: 8px;
-  border: none;
   margin-bottom: 15px;
   background: #00e2f3; /* Old browsers */
   background: -moz-linear-gradient(top,  #00e2f3 0%, #00a9da 48%, #00a9da 48%, #00a9da 71%, #00a9da 100%); /* FF3.6-15 */
@@ -54,15 +53,7 @@
 
   &:hover, &:focus {
     box-shadow: 0 0 20px rgba(white, 0.7);
-  }
-
-
-}
-
-@media screen and (min-width:0\0) {
-  /* IE9 and IE10 rule sets go here */
-  .header__button {
-    box-shadow: 2px 2px 15px #3a312a;
+    filter: progid:DXImageTransform.Microsoft.Glow(color=#ffffff, strength=6);
   }
 }
 
