@@ -43,8 +43,6 @@ gulp.task('watch', function () {
     gulp.watch(['app/img/**/*.*', 'app/img/*.*'], gulp.series('copy'));
 });
 
-
-//
 // gulp.task('sprites', function () {
 //     return  gulp.src('./app/img/sprites/*.*')
 //         .pipe(spritesmith({

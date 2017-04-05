@@ -1,0 +1,40 @@
+.content {
+  .container{
+    @include clearfix();
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+  }
+}
+.content__item {
+  float: left;
+  width: calc(100%/4 - 20px);
+  margin: 0 10px;
+  border: 1px solid $green;
+  border-radius: 6px;
+  padding: 10px;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.content__title {
+  margin: 0;
+  margin-bottom: 5px;
+  color:  #212121;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content__picture {
+  height: 130px;
+  background: url(../img/content/sprites.png) no-repeat;
+  margin: auto;
+}
+
+.content__picture_screen-1 {
+  background-position: 0 -1px ;
+  width: 210px;
+}

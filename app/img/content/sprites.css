@@ -1,0 +1,28 @@
+.record, .screens-1, .video, .screen-2{
+	background: url(sprites.png) no-repeat;
+}
+
+.record{
+	background-position: -250px 0;
+	width: 172px;
+	height: 126px;
+}
+
+.screens-1{
+	background-position: 0 -1px ;
+	width: 210px;
+	height: 114px;
+}
+
+.video{
+	background-position: 0 -150px ;
+	width: 184px;
+	height: 128px;
+}
+
+.screen-2{
+	background-position: -250px -150px ;
+	width: 138px;
+	height: 126px;
+}
+

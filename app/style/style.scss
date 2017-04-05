@@ -1,8 +1,10 @@
 $header-bg: #21010e;
 $footer-bg:#006384;
 $yellow: #ffad04;
+$green: #e2e2e2;
 
 @import "blocks/mixins";
 @import "blocks/setup";
 @import "blocks/header";
+@import "blocks/content";
 @import "blocks/footer";
