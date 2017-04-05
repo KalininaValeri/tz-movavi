@@ -1,5 +1,7 @@
-body {
-  background: red;
-  color: red;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
-}
+$header-bg: #21010e;
+$footer-bg:#006384;
+
+@import "blocks/mixins";
+@import "blocks/setup";
+@import "blocks/header";
+@import "blocks/footer";
